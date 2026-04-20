@@ -1,68 +1,38 @@
 # Changelog
 
-All notable changes to this theme will be documented in this file.
+## 0.3.0 - 2026-04-17
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-## [0.3.0] - 2026-04-17
-
-Rebrand from "Public Safety 2026" to "Seiler 2026" and restructure the theme
-into `src/`. Genericize division-specific prose, add a WooCommerce My Account
-FSE template, and do a broad mobile/tablet responsive overhaul.
+Rebrand from "Public Safety 2026" to "Seiler 2026", restructure into `src/`, and overhaul mobile and tablet styling.
 
 ### Changed
-
-- **Theme identifier renamed** `public-safety-2026` → `seiler-2026` throughout:
-  package name, slugs, text-domain, function prefixes, PHP namespace
-  (`SeilerInstrument\Themes\Seiler2026`), pattern categories, block names.
-- **Directory layout:** theme moved from repo root into `src/` to align with
-  `@wordpress/scripts` conventions.
-- **Content genericized** so the theme is division-agnostic — hero, features,
-  CTA, testimonials, service-grid, feature-cards, contact-section, and
-  partner-logos patterns no longer reference a specific industry vertical.
+- **Breaking:** Rename theme identifier from `public-safety-2026` to `seiler-2026` across slugs, text-domain, function prefixes, PHP namespace, pattern categories, and block names (e367e22)
+- **Breaking:** Move theme files from repository root into `src/` (e367e22)
+- Genericize pattern prose so the theme is division-agnostic (e367e22)
+- Restore WP fluid typography for hero slider heading sizing (e367e22)
+- Switch CI and release workflows to `npm install` to avoid bun's handling of optional-dep `file:` failures (2120593, 7ee85f9)
+- Make `@wordpress/env` an optional dependency so CI can skip it (7fa2081)
 
 ### Added
+- WooCommerce My Account FSE template (`src/templates/page-my-account.html`) with scoped styling (e367e22)
+- Mobile and tablet responsive styles for nav overlay, search overlay, slider, footer, CTA banner, features pattern, and industry cards (e367e22)
+- "> " prefix on mobile nav submenu items to indicate nesting (e367e22)
+- `render_block_core/post-excerpt` filter suppressing empty excerpt wrappers (gutenberg#30571 workaround) (e367e22)
+- GitHub Actions CI and Release workflows via `seiler-workflow-setup` (4260ba0, 2120593)
+- Release workflow auto-detects prerelease flag for `v0.x` tags and tags containing a hyphen (4260ba0)
+- GitHub Packages authentication in workflows via `SEILER_CLASSIC_PAT` (d1a6767)
+- `CHANGELOG.md` (4260ba0)
 
-- **WooCommerce My Account FSE template** (`src/templates/page-my-account.html`)
-  with scoped styling for navigation + content layout, active-state + hover
-  styling, and a special column layout for the logged-out login view.
-- **Mobile/tablet responsive styles** across nav overlay, search overlay,
-  slider, footer, CTA banner, features pattern, and industry cards.
-- **Submenu prefix** (`"> "`) in the mobile nav overlay to indicate nesting.
-- **CSS section for WooCommerce My Account** under `.woocommerce-account`.
-- **`render_block_core/post-excerpt` filter** that suppresses empty
-  `<p class="wp-block-post-excerpt__excerpt"> </p>` output, working around
-  a known Gutenberg regression
-  ([#30571](https://github.com/WordPress/gutenberg/issues/30571)).
+### Removed
+- Hardcoded skip-link from header template — WP core injects its own via `the_block_template_skip_link()` (e367e22)
+- Duplicate `theme.css` enqueue on the frontend (e367e22)
+- `test` job from release workflow — rely on pre-push hooks + CI (fe9aae7)
+- `--omit=optional` flag from install commands — was skipping `lightningcss-cli` platform-specific binaries (815214e)
 
 ### Fixed
-
-- **Webpack build recursion** (`src/build/build/build/…`) caused by wp-scripts
-  auto-discovering its own output as block entries. Scope entry discovery via
-  `WP_SRC_DIRECTORY` and pin `output.path` explicitly.
-- **Duplicate `theme.css` enqueue** on the frontend — the canvas-only enqueue
-  was leaking onto the public site.
-- **Hardcoded skip-link** removed from the header template; WP core now
-  injects its own via `the_block_template_skip_link()`.
-- **Mobile nav overlay** rendering: items stack vertically with proper hover
-  styling, submenus expand inline instead of floating as desktop dropdowns,
-  focus outlines now respect `:focus-visible` so pointer taps don't leave
-  lingering outlines, submenu background-hover animation suppressed.
-- **Mobile/tablet search overlay** full-width up to 960px (was a centered
-  floating panel at tablet widths).
-- **Slider arrows** disabled at the block level with CSS fallback — touch
-  devices use pagination dots only.
-- **Footer** stacks at ≤980px with the since-group hidden, inline nav-link
-  styles moved to CSS with clamped font-size, `txt-sep` separators convert
-  to line breaks at ≤450px.
-- **Page-header-sub** hides entirely when excerpt block is absent; reduced
-  padding when excerpt element is present but empty.
-- **Hero slider typography** restored to FSE-editable inline setting; mobile
-  sizing handled by WordPress fluid typography.
-- **Block validation errors** resolved in `hero-slider` pattern and `home`
-  template (missing `"arrows": false` and `"level": 1` attributes).
-
-## [0.2.x] and earlier
-
-See git history — versions prior to this changelog's introduction.
+- Webpack build output recursion (`src/build/build/build/…`) from wp-scripts auto-discovering its own output (e367e22)
+- Mobile nav overlay submenus expand inline instead of floating as desktop dropdowns (e367e22)
+- Mobile and tablet search overlay is full-width up to 960px (e367e22)
+- Footer stacks at `<= 980px`; `.footer-since-group` hidden on mobile; `.txt-sep` separators convert to line breaks at `<= 450px` (e367e22)
+- Focus outlines on mobile nav overlay use `:focus-visible` so pointer taps don't leave lingering outlines (e367e22)
+- Block validation errors in `hero-slider` pattern and `home` template (missing `"arrows": false` and `"level": 1`) (e367e22)
+- Slider carousel arrows disabled at block level with CSS fallback (e367e22)
