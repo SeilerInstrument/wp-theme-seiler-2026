@@ -3,8 +3,21 @@
 ## Usage: phpunit [phpunit-args]
 ## Example: "ddev phpunit --testdox"
 
-PLUGIN_DIR="${SEILER_DDEV_DIR:-/var/www/html/wp-content/themes/seiler-2026-theme}"
-PHPUNIT_BIN="${SEILER_PHPUNIT_BIN:-vendor-dev/bin/phpunit}"
+WORKSPACE="${SEILER_DDEV_DIR:-/workspace}"
+cd "$WORKSPACE" || exit 1
 
-cd "$PLUGIN_DIR" || exit 1
+# Auto-detect phpunit bin: src/vendor first (phpunit-setup preference when
+# src/composer.json exists), then root vendor. Override via SEILER_PHPUNIT_BIN.
+if [ -n "$SEILER_PHPUNIT_BIN" ]; then
+  PHPUNIT_BIN="$SEILER_PHPUNIT_BIN"
+elif [ -x src/vendor/bin/phpunit ]; then
+  PHPUNIT_BIN="src/vendor/bin/phpunit"
+elif [ -x vendor/bin/phpunit ]; then
+  PHPUNIT_BIN="vendor/bin/phpunit"
+else
+  echo "phpunit not found in src/vendor/bin/ or vendor/bin/" >&2
+  echo "Run \`bunx seiler-phpunit-setup\` to install." >&2
+  exit 1
+fi
+
 exec "$PHPUNIT_BIN" "$@"
