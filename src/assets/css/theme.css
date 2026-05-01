@@ -58,25 +58,10 @@ img {
 	max-width: 100%;
 }
 
-p {
-	padding-bottom: 1em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	margin-bottom: 0.5em;
-}
-
-/* Reset typography rhythm inside covers and carousels — those control
-   their own spacing via inline block attributes */
-.wp-block-cover__inner-container p,
-.wp-block-cover__inner-container h1,
-.wp-block-cover__inner-container h2,
-.wp-block-cover__inner-container h3,
-.wp-block-cover__inner-container h4,
-.wp-block-cover__inner-container h5,
-.wp-block-cover__inner-container h6 {
+/* Reset p padding-bottom inside covers, header, and footer —
+   theme.json sets the global rhythm; these contexts manage their own */
+.wp-block-cover__inner-container p {
 	padding-bottom: 0;
-	margin-bottom: 0;
 }
 
 .site-header p,
