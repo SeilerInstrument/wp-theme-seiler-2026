@@ -102,11 +102,7 @@
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph -->
-			<p>With the family&#8217;s continued hands-on approach and guidance and our highly skilled support team the company business has grown from their original office in downtown St. Louis to a multi-faceted family operation facility with over 140,000 square feet located in the Industrial Park Center of Valley Park, Missouri (St. Louis Metropolitan area.) Our family owned firm has five distinct business units; Seiler Manufacturing, Seiler Geospatial, Seiler Medical, Seiler Planetarium and Seiler Design Solutions. We invite you to visit our corporate website at www.seilerinst.com.</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:paragraph -->
-			<p>Let us show you our commitment to quality and excellence in sales, service and support. Contact us today.</p>
+			<p>With the family&#8217;s continued hands-on approach and guidance and our highly skilled support team the company business has grown from their original office in downtown St. Louis to a multi-faceted family operation facility with over 140,000 square feet located in the Industrial Park Center of Valley Park, Missouri (St. Louis Metropolitan area.) Our family owned firm has five distinct business units; <a href="https://www.seilerprecision.com/">Seiler Manufacturing</a>, <a href="http://www.seilergeo.com/">Seiler Geospatial</a>, <a href="http://www.seilermedical.com/">Seiler Medical</a>, <a href="https://planetarium.seilerinst.com/">Seiler Planetarium</a> and <a href="http://www.seiler-ds.com/">Seiler Design Solutions</a>. We invite you to visit our corporate website at <a href="https://www.seilersolutions.com/">seilersolutions.com</a>.</p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:column -->
