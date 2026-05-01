@@ -143,13 +143,19 @@
 					"slug": "medium",
 					"size": "14px",
 					"name": "Medium",
-					"fluid": false
+					"fluid": {
+						"min": "13px",
+						"max": "14px"
+					}
 				},
 				{
 					"slug": "large",
 					"size": "18px",
 					"name": "Large",
-					"fluid": false
+					"fluid": {
+						"min": "16px",
+						"max": "18px"
+					}
 				},
 				{
 					"slug": "x-large",
