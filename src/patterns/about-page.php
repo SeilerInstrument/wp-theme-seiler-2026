@@ -14,8 +14,8 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|small","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--medium)">
-	<!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"2.5rem","fontWeight":"700"}}} -->
-	<h1 class="wp-block-heading" style="font-size:2.5rem;font-weight:700">About Us</h1>
+	<!-- wp:heading {"level":1} -->
+	<h1 class="wp-block-heading">About Us</h1>
 	<!-- /wp:heading -->
 </div>
 <!-- /wp:group -->
@@ -34,44 +34,44 @@
 
 <!-- wp:group {"style":{"color":{"background":"#F5F5F5"},"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background" style="background-color:#F5F5F5;padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--medium)">
-	<!-- wp:heading {"style":{"typography":{"fontSize":"2rem","fontWeight":"700"}},"textColor":"primary"} -->
-	<h2 class="wp-block-heading has-primary-color has-text-color" style="font-size:2rem;font-weight:700">Why Choose Working with Us?</h2>
+	<!-- wp:heading {"textColor":"primary"} -->
+	<h2 class="wp-block-heading has-primary-color has-text-color">Why Choose Working with Us?</h2>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph -->
 	<p>At Seiler Instrument &#8211; we feel there are more than a few reasons you should consider working with a proven geospatial industry partner to help you meet your business needs and goals.</p>
 	<!-- /wp:paragraph -->
 
-	<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.25rem","fontWeight":"700"},"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
-	<h3 class="wp-block-heading" style="font-size:1.25rem;font-weight:700;margin-top:var(--wp--preset--spacing--medium)">We Stand Behind Our Products</h3>
+	<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
+	<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--medium)">We Stand Behind Our Products</h3>
 	<!-- /wp:heading -->
 	<!-- wp:paragraph -->
 	<p>Seiler Instrument and Manufacturing Company (&#8220;Seiler&#8221;) has always had a &#8220;complete satisfaction&#8221; purchase policy and we will try to work with you to resolve any merchandise issues that you may have. We invite you to view our <a href="/terms-and-conditions">terms and conditions</a> page for details.</p>
 	<!-- /wp:paragraph -->
 
-	<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.25rem","fontWeight":"700"},"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
-	<h3 class="wp-block-heading" style="font-size:1.25rem;font-weight:700;margin-top:var(--wp--preset--spacing--medium)">Longevity</h3>
+	<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
+	<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--medium)">Longevity</h3>
 	<!-- /wp:heading -->
 	<!-- wp:paragraph -->
 	<p>With four generations of professionals who do more than just sell products. We have designed, manufactured, sold, trained for, maintained, and repaired them. We sell a solution based on your goals and needs, not just the descriptions from a brochure.</p>
 	<!-- /wp:paragraph -->
 
-	<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.25rem","fontWeight":"700"},"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
-	<h3 class="wp-block-heading" style="font-size:1.25rem;font-weight:700;margin-top:var(--wp--preset--spacing--medium)">Hands-On</h3>
+	<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
+	<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--medium)">Hands-On</h3>
 	<!-- /wp:heading -->
 	<!-- wp:paragraph -->
 	<p>Because of our longevity, stability and experience, you can count on us to be there when you need us. We have the resources and know-how to overcome your challenges in the field and office and to keep your project(s) on schedule. With our local presence throughout the Midwest, you will be able to reach someone that understands our unique geospatial environment.</p>
 	<!-- /wp:paragraph -->
 
-	<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.25rem","fontWeight":"700"},"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
-	<h3 class="wp-block-heading" style="font-size:1.25rem;font-weight:700;margin-top:var(--wp--preset--spacing--medium)">Experience</h3>
+	<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
+	<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--medium)">Experience</h3>
 	<!-- /wp:heading -->
 	<!-- wp:paragraph -->
 	<p>Seiler Instrument&#8217;s Geospatial team is made up of registered land surveyors, certified GISPs, and licensed pilots as well as other experienced surveying and GIS mapping professionals and support staff. We help guide and get you equipped and trained based on our mutual understanding of your projects and workflows. We excel in providing you the on-going support you need after the sale leaving you with a clear road map to success.</p>
 	<!-- /wp:paragraph -->
 
-	<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.25rem","fontWeight":"700"},"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
-	<h3 class="wp-block-heading" style="font-size:1.25rem;font-weight:700;margin-top:var(--wp--preset--spacing--medium)">Adaptable</h3>
+	<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
+	<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--medium)">Adaptable</h3>
 	<!-- /wp:heading -->
 	<!-- wp:paragraph -->
 	<p>We have formed relationships with not one, but several of the top UAS, Geospatial, and Software manufacturers in the market. Because of our unique business structure, we are empowered with the ability not to force our customers into a one-size-fits-all solution.</p>
@@ -81,8 +81,8 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--medium)">
-	<!-- wp:heading {"style":{"typography":{"fontSize":"2rem","fontWeight":"700"}}} -->
-	<h2 class="wp-block-heading" style="font-size:2rem;font-weight:700">History and Seiler Business Segments</h2>
+	<!-- wp:heading -->
+	<h2 class="wp-block-heading">History and Seiler Business Segments</h2>
 	<!-- /wp:heading -->
 
 	<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|large","left":"var:preset|spacing|large"},"margin":{"top":"var:preset|spacing|medium"}}}} -->
@@ -113,8 +113,8 @@
 
 <!-- wp:cover {"dimRatio":0,"align":"full","minHeight":220,"minHeightUnit":"px","backgroundColor":"secondary","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}}} -->
 <div class="wp-block-cover alignfull has-secondary-background-color has-background" style="padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--medium);min-height:220px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container">
-	<!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"2rem","fontWeight":"700"}},"textColor":"white"} -->
-	<h2 class="wp-block-heading has-text-align-center has-white-color has-text-color" style="font-size:2rem;font-weight:700">Ready to Work Together?</h2>
+	<!-- wp:heading {"textAlign":"center","textColor":"white"} -->
+	<h2 class="wp-block-heading has-text-align-center has-white-color has-text-color">Ready to Work Together?</h2>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"align":"center","textColor":"white","style":{"spacing":{"margin":{"top":"var:preset|spacing|small","bottom":"0"}}}} -->

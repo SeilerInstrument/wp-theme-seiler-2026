@@ -269,6 +269,9 @@
 		},
 		"elements": {
 			"p": {
+				"typography": {
+					"fontWeight": "600"
+				},
 				"spacing": {
 					"padding": {
 						"bottom": "var(--wp--preset--spacing--small)"
@@ -302,7 +305,7 @@
 				"spacing": {
 					"margin": {
 						"top": "0",
-						"bottom": "var(--wp--preset--spacing--medium)"
+						"bottom": "1em"
 					}
 				}
 			},
@@ -320,7 +323,7 @@
 				"spacing": {
 					"margin": {
 						"top": "0",
-						"bottom": "var(--wp--preset--spacing--medium)"
+						"bottom": "1em"
 					}
 				}
 			},
