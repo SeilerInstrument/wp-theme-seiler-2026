@@ -85,3 +85,11 @@ else
   echo "→ Installing plugin: woocommerce"
   wp plugin install 'woocommerce' --activate
 fi
+
+# Ensure default pages exist (idempotent — skips if slug already present)
+if ! wp post list --post_type=page --name=about --field=ID --format=ids 2>/dev/null | grep -q .; then
+  echo "→ Creating default About page..."
+  wp post create --post_type=page --post_status=publish --post_title='About' --post_name=about
+fi
+
+wp rewrite flush --quiet 2>/dev/null || true

@@ -25,6 +25,7 @@
 		"setup:homepage": "npm run setup:create-homepage && npm run setup:set-homepage",
 		"setup:create-homepage": "ddev wp post create --post_type=page --post_status=publish --post_title='Home' --post_name=home",
 		"setup:set-homepage": "ddev wp option update show_on_front page && ddev wp option update page_on_front $(ddev wp post list --post_type=page --name=home --field=ID --format=ids)",
+		"setup:about": "ddev wp post list --post_type=page --name=about --field=ID --format=ids | grep -q . || ddev wp post create --post_type=page --post_status=publish --post_title='About' --post_name=about",
 		"browser:open": "bash -c 'if grep -qi microsoft /proc/version 2>/dev/null; then explorer.exe https://seiler-2026-theme.ddev.site; elif [[ $OSTYPE == darwin* ]]; then open https://seiler-2026-theme.ddev.site; else xdg-open https://seiler-2026-theme.ddev.site; fi'",
 		"browser:chrome": "bash -c 'if grep -qi microsoft /proc/version 2>/dev/null; then cmd.exe /c start chrome https://seiler-2026-theme.ddev.site; elif [[ \"$OSTYPE\" == \"darwin\"* ]]; then open -a \"Google Chrome\" https://seiler-2026-theme.ddev.site; else google-chrome https://seiler-2026-theme.ddev.site; fi'",
 		"browser:firefox": "bash -c 'if grep -qi microsoft /proc/version 2>/dev/null; then cmd.exe /c start firefox https://seiler-2026-theme.ddev.site; elif [[ \"$OSTYPE\" == \"darwin\"* ]]; then open -a Firefox https://seiler-2026-theme.ddev.site; else firefox https://seiler-2026-theme.ddev.site; fi'",
@@ -41,7 +42,7 @@
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.59.1",
-		"@seilerinstrument/wp-build-tools": "^1.31.3",
+		"@seilerinstrument/wp-build-tools": "^1.37.0",
 		"@wordpress/scripts": "^27.9.0"
 	},
 	"keywords": [
