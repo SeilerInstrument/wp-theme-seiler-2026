@@ -135,6 +135,59 @@ function seiler_2026_create_default_navigations() {
 add_action( 'after_switch_theme', 'seiler_2026_create_default_navigations' );
 
 /**
+ * Create default pages on theme activation.
+ * Runs once per activation; skipped on subsequent activations.
+ */
+function seiler_2026_create_default_pages() {
+	if ( get_option( 'seiler_2026_default_pages_created' ) ) {
+		return;
+	}
+
+	$pages = array(
+		array(
+			'post_title'  => 'Home',
+			'post_name'   => 'home',
+			'post_status' => 'publish',
+			'post_type'   => 'page',
+		),
+		array(
+			'post_title'  => 'About',
+			'post_name'   => 'about',
+			'post_status' => 'publish',
+			'post_type'   => 'page',
+		),
+	);
+
+	$home_id = 0;
+
+	foreach ( $pages as $page ) {
+		// Skip if a page with this slug already exists.
+		$existing = get_page_by_path( $page['post_name'], OBJECT, 'page' );
+		if ( $existing ) {
+			if ( 'home' === $page['post_name'] ) {
+				$home_id = $existing->ID;
+			}
+			continue;
+		}
+
+		$id = wp_insert_post( $page );
+
+		if ( 'home' === $page['post_name'] ) {
+			$home_id = $id;
+		}
+	}
+
+	// Set Home as the static front page.
+	if ( $home_id ) {
+		update_option( 'show_on_front', 'page' );
+		update_option( 'page_on_front', $home_id );
+	}
+
+	update_option( 'seiler_2026_default_pages_created', true );
+}
+add_action( 'after_switch_theme', 'seiler_2026_create_default_pages' );
+
+/**
  * Set default site logo on theme activation
  */
 function seiler_2026_set_default_logo() {
