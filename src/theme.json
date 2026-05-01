@@ -513,6 +513,11 @@
 			"name": "full-width",
 			"title": "Full Width",
 			"postTypes": ["page"]
+		},
+		{
+			"name": "page-feature",
+			"title": "Feature Page",
+			"postTypes": ["page"]
 		}
 	]
 }
