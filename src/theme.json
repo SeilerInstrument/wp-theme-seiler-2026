@@ -141,44 +141,41 @@
 				},
 				{
 					"slug": "medium",
-					"size": "18px",
+					"size": "14px",
 					"name": "Medium",
 					"fluid": false
 				},
 				{
 					"slug": "large",
-					"size": "24px",
+					"size": "18px",
 					"name": "Large",
+					"fluid": false
+				},
+				{
+					"slug": "x-large",
+					"size": "24px",
+					"name": "Extra Large",
 					"fluid": {
 						"min": "20px",
 						"max": "24px"
 					}
 				},
 				{
-					"slug": "x-large",
+					"slug": "2x-large",
 					"size": "32px",
-					"name": "Extra Large",
+					"name": "2X Large",
 					"fluid": {
 						"min": "28px",
 						"max": "32px"
 					}
 				},
 				{
-					"slug": "2x-large",
+					"slug": "3x-large",
 					"size": "48px",
-					"name": "2X Large",
+					"name": "3X Large",
 					"fluid": {
 						"min": "36px",
 						"max": "48px"
-					}
-				},
-				{
-					"slug": "3x-large",
-					"size": "60px",
-					"name": "3X Large",
-					"fluid": {
-						"min": "42px",
-						"max": "60px"
 					}
 				}
 			],
@@ -232,6 +229,15 @@
 			]
 		},
 		"custom": {
+			"fontSizeOriginal": {
+				"small": "14px",
+				"base": "18px",
+				"medium": "18px",
+				"large": "24px",
+				"xLarge": "32px",
+				"twoXLarge": "48px",
+				"threeXLarge": "60px"
+			},
 			"spacing": {
 				"gutter": "2em"
 			},
