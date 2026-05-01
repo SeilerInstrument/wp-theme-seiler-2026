@@ -106,13 +106,13 @@ function seiler_2026_create_default_navigations() {
 		'post_title'   => $main_nav_title,
 		'post_content' => '<!-- wp:navigation-link {"label":"Industries","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-		<!-- wp:navigation-link {"label":"Shop","url":"' . esc_url( home_url( '/shop/' ) ) . '","kind":"custom","isTopLevelLink":true} /-->
+		<!-- wp:navigation-link {"label":"Shop","url":"/shop/","kind":"custom","isTopLevelLink":true} /-->
 
 		<!-- wp:navigation-link {"label":"Resources","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
 		<!-- wp:navigation-link {"label":"Events","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-		<!-- wp:navigation-link {"label":"About","url":"' . esc_url( home_url( '/about/' ) ) . '","kind":"custom","isTopLevelLink":true} /-->
+		<!-- wp:navigation-link {"label":"About","url":"/about/","kind":"custom","isTopLevelLink":true} /-->
 
 		<!-- wp:navigation-link {"label":"Contact","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
